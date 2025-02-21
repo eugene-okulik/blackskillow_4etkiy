@@ -1,0 +1,22 @@
+my_dict = {'tuple': (1, 33, 4.2, 12, 6), 'list': [2, 'Name', True, 23.5, 7],
+           'dict': {'name': 'Tom', 'age': '25', 'gender': 'male', 'grade': '11', 'status': 'free'},
+           'set': {1, 33, 16, 23.1, 16, 54, 11, 1}}
+print('=' * 200)
+print('Последний элемент кортежа:', my_dict['tuple'][-1])
+print('=' * 200)
+print('Список был:', my_dict['list'])
+my_dict['list'].append('New')
+my_dict['list'].pop(1)
+print('Список стал:', my_dict['list'])
+print('=' * 200)
+print('Словарь был:', my_dict['dict'])
+my_dict['dict']['i am a tuple'] = ('New', 1)
+my_dict['dict'].pop('grade')
+print('Словарь стал:', my_dict['dict'])
+print('=' * 200)
+print('Множество было:', my_dict['set'])
+my_dict['set'].add(99)
+my_dict['set'].pop()
+print('Множество стало:', my_dict['set'])
+print('=' * 200)
+print(my_dict)
